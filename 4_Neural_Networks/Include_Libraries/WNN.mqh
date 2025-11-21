@@ -1,11 +1,4 @@
 
-//+------------------------------------------------------------------+
-//|                                                          WNN.mqh |
-//|                                      Santiago Cruz, AlgoNet Inc. |
-//|                       https://www.mql5.com/en/users/algo-trader/ |
-//+------------------------------------------------------------------+
-#property copyright "Santiago Cruz, AlgoNet Inc."
-#property link      "https://www.mql5.com/en/users/algo-trader/"
 
 #include <Math\Stat\Normal.mqh>
 
@@ -58,8 +51,7 @@ class WNN
    void   UpdateValues(int shift);
    void   Train(int shift);
    double Prediction();   
-  };
-
+  }; 
 WNN::WNN(string Symbol_,ENUM_TIMEFRAMES TimeFrame,int History_Depth,int Number_of_Neurons,double alpha)
   {
    m_Symbol = Symbol_;
